@@ -1,0 +1,41 @@
+html, body {
+    margin:0px;
+    height: 100%;
+  }
+  
+.bg
+{
+    background-image: url(bg.avif);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-attachment: fixed;
+    width: 30%;
+}
+.container, form , .meat
+{
+    display: flex;
+}
+.container
+{
+    height: 100%;
+    justify-content: start;
+}
+
+ul
+{
+    list-style: none;
+}
+label
+{
+    display: block;
+}
+
+.meat
+{
+    flex-direction: column;
+    justify-content: center;
+}
+.words, .intro , .form-body
+{
+    flex: 1;
+}
