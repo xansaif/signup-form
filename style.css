@@ -1,6 +1,12 @@
+@font-face {
+    font-family: "norse-bold";
+    src: url("fonts/norse-bold-webfont.woff") format("woff"),
+    url("fonts/norse-bold-webfont.woff2") format("woff2");
+    }
 html, body {
     margin:0px;
     height: 100%;
+    font-family: sans-serif;
   }
   
 .bg
@@ -10,8 +16,11 @@ html, body {
     background-size: contain;
     background-attachment: fixed;
     width: 30%;
+    justify-content: space-between;
+    align-items: start;
+    flex-direction: column;
 }
-.container, form , .meat
+.container, form , .meat, .bg, .logo , .intro
 {
     display: flex;
 }
@@ -34,8 +43,98 @@ label
 {
     flex-direction: column;
     justify-content: center;
+    
 }
-.words, .intro , .form-body
+.words, .intro , .form-body , .meat, .logo
 {
     flex: 1;
+}
+.intro , .words
+{
+    padding: 2rem;
+    padding-top: 1rem;
+    background-color: #edf0f3;
+}
+.intro
+{
+    flex-direction: column;
+    align-items: start;
+    justify-content: end;
+}
+button
+{
+    border: none;
+    color: white;
+    background-color: #596D48;
+    border-radius: 4px;
+    padding: 8px;
+    width: 10rem;
+    height: auto;
+}
+.form-body
+{
+    -webkit-box-shadow: 6px 4px 3px 5px rgba(35,32,32,0.76); 
+    box-shadow: 6px 4px 3px 5px rgba(35,32,32,0.76);
+}
+
+.logo
+{
+    align-self: stretch;
+    color: white;
+    background-color: #00000071;
+    margin-top: 6rem;
+    font-family: norse-bold;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    max-height: 15rem;
+    gap: 8px;
+
+}
+
+.form-heading
+{
+    margin-left: 3.5rem;
+}
+img
+{
+    height: auto;
+    width: 5rem;
+}
+li
+{
+    margin: 1rem;
+}
+
+.credit , .credit a
+{
+    color: white;
+    align-self: center;
+}
+
+label
+{
+    color: #2a3322;
+    font-size: small;
+}
+
+input
+{
+    width: 10rem;
+    height: 1rem;
+    font-family: inherit;
+}
+
+.words a
+{
+    text-decoration: none;
+    color: #596D48;
+
+}
+
+input:focus
+{
+    border-color: blue;
+    -webkit-box-shadow: 3px 4px 4px 0px rgba(14, 13, 59, 0.57); 
+    box-shadow: 3px 4px 4px 0px rgba(14, 13, 59, 0.57);
 }
