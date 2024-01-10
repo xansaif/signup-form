@@ -121,8 +121,9 @@ label
 input
 {
     border: 1px solid #E5E7EB;
-    width: 10rem;
-    height: 1rem;
+    border-radius: 5px;
+    width: 12rem;
+    height: 1.5rem;
     font-family: inherit;
 }
 
@@ -148,5 +149,18 @@ input:focus
     font-size: 10px;
     margin-top: -10px;
     margin-left: 15px;
+    visibility: visible;
+}
+
+.pwdmatch
+{
     visibility: hidden;
+}
+
+.err
+{
+    border: 1px solid rgb(255, 6, 6);
+    outline: none;
+    -webkit-box-shadow: 3px 4px 4px -1px rgba(14, 13, 59, 0.57); 
+    box-shadow: 3px 4px 4px -1px rgba(109, 17, 17, 0.57);
 }
